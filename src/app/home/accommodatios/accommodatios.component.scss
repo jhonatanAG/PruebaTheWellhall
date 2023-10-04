@@ -1,0 +1,103 @@
+.accomodations {
+    background-color: #281a13;
+    padding: 10rem 0;
+
+    .accomodations-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        padding: 2rem
+    }
+
+    .texto-info {
+        width: 50%;
+
+        h2 {
+            font-weight: 100;
+            font-size: 6rem;
+            color: #ffbd59;
+        }
+
+        p {
+            color: #ff6f26;
+            font-size: 2rem;
+            font-weight: 100;
+        }
+
+    }
+
+    .accomodations-info .contenido-derecha {
+        height: 40vh;
+        width: 25%;
+        background-image: url("/assets/img/woman.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .acomodations-titulo {
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .acomodations-catalogo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .contenedor-info-tarjeta {
+        border: 1px solid #623e2a;
+        margin: 1rem 0;
+        padding: 2.5rem;
+        color: #623e2a;
+    }
+
+
+
+    .contenedor-info-tarjeta:hover {
+        color: #f8ad4e;
+    }
+
+    .activo {
+        color: #f8ad4e;
+    }
+
+}
+
+
+@media(max-width: 900px) {
+    .accomodations-info {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .accomodations .text_info {
+        width: 100%;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    }
+
+    .accomodations .accomodations-info .contenido-derecha {
+        width: 100%;
+    }
+
+    .accomodations .acomodations-catalogo {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+    }
+}

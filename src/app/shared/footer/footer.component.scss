@@ -1,0 +1,22 @@
+footer{
+    padding: 2rem 0;
+    background-color: black;
+   
+    color: white;
+
+    .col_footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h3{
+        margin: 0;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        background-color: #1a1a1a;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+    }
+}

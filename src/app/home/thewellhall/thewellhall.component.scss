@@ -1,0 +1,93 @@
+section {
+    background-color: #623e2a;
+    padding-bottom: 10rem;
+}
+
+.contenedor h2 {
+    color: white;
+    margin: 0;
+    font-weight: 100;
+    font-size: 3.5rem;
+    padding: 7rem 0;
+}
+
+.contenedor .contenido-thewell {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+
+    .thewell-tarjeta {
+        border: 1px solid white;
+        padding: 2rem;
+        color: white;
+
+        .tarjeta-saturday {
+            display: block;
+            padding-top: 2rem;
+        }
+
+        .btn {
+            border: 1px solid white;
+            border-radius: 5rem;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+
+            .thewell-enlace {
+                color: white;
+                text-decoration: none;
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .thewell-tarjeta h3 {
+        font-size: 2rem;
+    }
+
+    .thewhell-primero p {
+        display: flex;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .thewell-tarjeta-iconos {
+        display: flex;
+        gap: 2rem;
+
+        p {
+            border: 1px solid white;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .contenedor h2 {
+        text-align: center;
+    }
+
+    .contenedor .contenido-thewell {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+}

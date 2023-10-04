@@ -1,0 +1,176 @@
+section.suites {
+    background-color: #f4f1ed;
+    padding: 6rem 0;
+}
+
+.contenedor .family-suite {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contenedor .contenedor-suite {
+    color: #623e2a;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 45rem;
+    width: 250rem;
+    
+    h2 {
+        font-size: 6rem;
+        width: 50%;
+    }
+
+    p{
+        width: 50%;
+        font-size: 1.5rem;
+    }
+}
+
+.contenedor .contenedor-suite-foto {
+    width: 200rem;
+}
+
+.contenedor .contenedor-texto {
+    border: 1px solid #151515;
+    padding: 2rem;
+    color: #623e2a;
+    margin-top: 1.5rem;
+
+    p {
+        font-size: 1.2rem;
+        margin: 0 auto;
+        width: 68%;
+    }
+}
+
+.contenedor .contenedor-fotos-flattering {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    .fotos-flattering {
+        width: 40rem;
+    }
+
+    .fotos-flattering p {
+        width: 80%;
+    }
+
+    .flattering-alto img{
+        height: 53rem;
+    }
+}
+
+.contenedor-promos {
+    background-color: #efebe5;
+}
+
+.contenedor-promos h2 {
+    color: #623e2a;
+    text-align: center;
+    font-size: 4rem;
+    padding: 6rem 0 2.5rem 0;
+    font-weight: 100;
+    margin: 0 0 2rem 0;
+}
+
+.contenido-promos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.contenido-promos .promos-tarjeta {
+    border: 1px solid #785b54;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.promos-tarjeta h3 {
+    color: #623e2a;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.promos-tarjeta p {
+    color: #623e2a;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.contenido-promos .margen {
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
+}
+
+@media(max-width: 900px) {
+    .contenedor .contenedor-suite {
+        display:block;
+        height:auto;
+        width: auto;
+        
+    }
+
+    .contenedor .family-suite {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        
+        .contenedor-suite h2, p {
+            width: 100%;
+        }
+
+        .contenedor-suite p {
+            text-align: center;
+        }
+
+        .contenedor-suite-foto {
+            width: 100%;
+        }
+    }
+
+    .contenedor .contenedor-suite {     
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+        }
+    
+        p{
+          
+            font-size: 1rem;
+        }
+    }
+
+    .contenedor .contenedor-fotos-flattering {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .contenedor .contenedor-fotos-flattering .fotos-flattering {
+        width: 100%;
+    }
+
+    .contenedor .contenedor-texto p {
+        width: 100%;
+    }
+
+    .contenedor .contenedor-fotos-flattering {
+    
+        .fotos-flattering p {
+            width: 100%;
+        }
+    }
+
+    .contenido-promos {
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
